@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!-- Uppgift 2 -->
+    
+    <p id="demo">Tomt</p>
+
+    <!-- Uppgift 3 -->
+    <button onclick="changeImage()">Change Image</button>
+    <img id="image" src="image1.jpg">
+
+    <!-- Uppgift 5 -->
+    <button id="textBt"; onclick='alertText()'>Klicka här</button>
+    <input id="TextBox"; type="text"></input>
+
+    <script>
+
+
+        //Uppgift 1
+
+        function addera(a, b){
+
+            return(a + b)
+        }
+
+        console.log(addera(9, 7))
+
+        //Uppgift 2
+
+        const newtext = document.getElementById("demo");
+        demo.text = "Hej";
+
+        //Uppgift 3
+
+        function changeImage() {
+        const image = document.getElementById("image");
+        image.src = "image2.jpg";}
+
+
+        //Uppgift 4
+
+        const numArray = [13, 32, 3, 21, 2];
+
+        console.log(numArray)
+        
+        for(let i = 0; i < numArray.length; i++){
+
+            numArray.splice(i, 1, (numArray[i] - 1));
+        }
+        console.log(numArray)
+
+        //Uppgift 5
+
+        function alertText(){
+            alert(document.getElementById("TextBox"))
+        }
+
+
+        
+    </script>
+
+</body>
+</html>
